@@ -3,12 +3,136 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Миша & Маша — приглашение</title>
+  <title>Миша & Маша — 14 августа 2026</title>
+  <meta name="description" content="Приглашение на свадьбу Миши и Маши" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Great+Vibes&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <main>
-    <img src="invitation.png" alt="Приглашение на свадьбу Миши и Маши" />
+
+    <section class="hero panel">
+      <div class="hero-card reveal">
+        <div class="ornament">⌁</div>
+        <p class="overline">wedding invitation</p>
+        <h1>Миша <span>&</span> Маша</h1>
+        <p class="date">14 августа 2026</p>
+        <p class="hero-text">Будем счастливы разделить этот день вместе с вами</p>
+      </div>
+      <a class="scroll" href="#when">листайте вниз</a>
+    </section>
+
+    <section id="when" class="panel light reveal">
+      <div class="section-head">
+        <p class="overline">когда</p>
+        <h2>14 августа</h2>
+      </div>
+
+      <div class="timeline">
+        <article>
+          <span>15:30</span>
+          <p>Сбор гостей и фуршет на площадке</p>
+        </article>
+        <article>
+          <span>16:30</span>
+          <p>Выездная регистрация</p>
+        </article>
+        <article>
+          <span>после</span>
+          <p>А всё, что будет дальше, останется только в нашей памяти</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="panel split reveal">
+      <div class="photo venue"></div>
+      <div class="text-block">
+        <p class="overline">где</p>
+        <h2>Веранда</h2>
+        <p>
+          Тульская область, Киреевский район,<br>
+          сельское поселение Бородинское,<br>
+          посёлок Гвардейский, улица Пушкина, 12
+        </p>
+        <a class="button" target="_blank" href="https://yandex.ru/maps/?text=Тульская%20область%2C%20Киреевский%20район%2C%20посёлок%20Гвардейский%2C%20улица%20Пушкина%2C%2012">Построить маршрут</a>
+      </div>
+    </section>
+
+    <section class="panel transfer reveal">
+      <div>
+        <p class="overline">трансфер</p>
+        <h2>Как добраться</h2>
+        <p>
+          Для гостей будет организован трансфер из Тулы до площадки и обратно.
+          Время и место сбора сообщим немного позже.
+        </p>
+        <p>
+          Если вы планируете приехать самостоятельно, пожалуйста, сообщите нам об этом.
+        </p>
+      </div>
+    </section>
+
+    <section class="panel dress reveal">
+      <div class="section-head">
+        <p class="overline">dress code</p>
+        <h2>Country mood</h2>
+        <p>
+          Нам будет приятно, если вы поддержите атмосферу этого дня и выберете наряды в природной цветовой гамме.
+        </p>
+      </div>
+
+      <div class="palette">
+        <span style="--c:#f4efe6"></span>
+        <span style="--c:#d8c8ae"></span>
+        <span style="--c:#b0b796"></span>
+        <span style="--c:#7d8760"></span>
+        <span style="--c:#9a7353"></span>
+        <span style="--c:#c4b8a8"></span>
+      </div>
+
+      <p class="note">
+        Площадка находится на природе: газон, трава и загородная атмосфера.
+        Лучше выбрать удобную обувь на плоском ходу.
+      </p>
+    </section>
+
+    <section class="panel gender reveal">
+      <div class="gender-card">
+        <p class="overline">gender party</p>
+        <h2>Ещё один особенный момент</h2>
+        <p>
+          В этот день мы вместе узнаем, кто совсем скоро станет новым членом нашей семьи.
+          Можно уже готовиться, за кого вы голосуете.
+        </p>
+      </div>
+    </section>
+
+    <section class="panel rsvp reveal">
+      <div class="rsvp-card">
+        <p class="overline">ответ на приглашение</p>
+        <h2>До 10 июля 2026 года</h2>
+        <p>
+          Пожалуйста, сообщите нам, сможете ли вы разделить этот день вместе с нами.
+          Ответить можно любым удобным способом.
+        </p>
+      </div>
+
+      <div class="contacts">
+        <a href="tel:+79004942141"><b>Мария</b><span>8 900 494-21-41</span></a>
+        <a href="tel:+79612671433"><b>Михаил</b><span>8 961 267-14-33</span></a>
+      </div>
+    </section>
+
+    <footer>
+      <p>С любовью,</p>
+      <h2>Миша & Маша</h2>
+      <p>До встречи 14 августа</p>
+    </footer>
+
   </main>
+
+  <script src="script.js"></script>
 </body>
 </html>
