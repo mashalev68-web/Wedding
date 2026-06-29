@@ -1,74 +1,157 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Миша & Маша — 14 августа 2026</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Manrope:wght@300;400;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Миша & Маша — 14 августа 2026</title>
+  <meta name="description" content="Приглашение на свадьбу Миши и Маши — 14 августа 2026" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-<section class="hero">
-<div class="overlay"></div>
-<div class="content">
-<h1>Миша <span>&</span> Маша</h1>
-<p>14 августа 2026</p>
-</div>
-</section>
+  <main>
+    <section class="hero">
+      <div class="hero__shade"></div>
+      <div class="hero__content reveal">
+        <p class="eyebrow">wedding day</p>
+        <h1>Миша <span>&</span> Маша</h1>
+        <p class="date">14 августа 2026</p>
+      </div>
+      <a href="#invite" class="scroll">листайте вниз</a>
+    </section>
 
-<section>
-<h2>Будем счастливы разделить этот день вместе с вами</h2>
-<p>Совсем скоро состоится один из самых важных дней нашей жизни. Нам будет очень приятно провести его рядом с вами.</p>
-<div id="countdown"></div>
-</section>
+    <section id="invite" class="section invite reveal">
+      <p class="eyebrow">приглашение</p>
+      <h2>Будем счастливы разделить этот день вместе с вами</h2>
+      <p class="lead">
+        Совсем скоро состоится день, который станет для нас одним из самых важных.
+        Нам будет очень приятно провести его рядом с вами — в атмосфере тепла, природы и летнего вечера.
+      </p>
 
-<section>
-<h2>Когда</h2>
-<div class="card">
-<p><b>15:30</b> — Сбор гостей и фуршет</p>
-<p><b>16:30</b> — Выездная регистрация</p>
-<p>✨ Всё, что будет после, останется только в нашей памяти.</p>
-</div>
-</section>
+      <div class="countdown" aria-label="Таймер до свадьбы">
+        <div><strong id="days">0</strong><span>дней</span></div>
+        <div><strong id="hours">0</strong><span>часов</span></div>
+        <div><strong id="minutes">0</strong><span>минут</span></div>
+      </div>
+    </section>
 
-<section>
-<h2>Где</h2>
-<div class="photo"></div>
-<p><b>Веранда</b><br>Тульская область, Киреевский район,<br>пос. Гвардейский, ул. Пушкина, 12</p>
-<p>Для гостей будет организован трансфер из Тулы. Если планируете приехать самостоятельно — сообщите нам.</p>
-</section>
+    <section class="section split reveal">
+      <div>
+        <p class="eyebrow">место</p>
+        <h2>Веранда</h2>
+        <p>
+          Тульская область, Киреевский район,<br>
+          сельское поселение Бородинское,<br>
+          посёлок Гвардейский, улица Пушкина, 12
+        </p>
+        <a class="button" target="_blank" href="https://yandex.ru/maps/?text=Тульская%20область%2C%20Киреевский%20район%2C%20посёлок%20Гвардейский%2C%20улица%20Пушкина%2C%2012">
+          Построить маршрут
+        </a>
+      </div>
+      <div class="image image--venue" aria-hidden="true"></div>
+    </section>
 
-<section>
-<h2>Dress Code</h2>
-<div class="palette">
-<div style="background:#F5F2EC"></div>
-<div style="background:#DCCFB7"></div>
-<div style="background:#A8B19A"></div>
-<div style="background:#C8C2BA"></div>
-<div style="background:#8A6B52"></div>
-</div>
-<p>Будем рады, если вы поддержите атмосферу свадьбы и выберете наряды в природной цветовой гамме. Площадка находится на природе, поэтому рекомендуем удобную обувь.</p>
-</section>
+    <section class="section transfer reveal">
+      <p>
+        Для гостей будет организован трансфер из Тулы до площадки и обратно.
+        Время и место сбора сообщим позже.
+      </p>
+      <p>
+        Если вы планируете приехать самостоятельно, пожалуйста, сообщите нам об этом.
+      </p>
+    </section>
 
-<section>
-<h2>Gender Party</h2>
-<p>В этот день нас ждёт ещё одно особенное событие — вместе с вами мы узнаем, кто совсем скоро станет новым членом нашей семьи 🤍</p>
-</section>
+    <section class="section reveal">
+      <p class="eyebrow">программа дня</p>
+      <h2>14 августа</h2>
+      <div class="timeline">
+        <div class="time-card">
+          <span>15:30</span>
+          <p>Сбор гостей и фуршет на площадке</p>
+        </div>
+        <div class="time-card">
+          <span>16:30</span>
+          <p>Выездная регистрация</p>
+        </div>
+        <div class="time-card">
+          <span>после</span>
+          <p>А всё, что будет дальше, останется только в нашей памяти</p>
+        </div>
+      </div>
+    </section>
 
-<section>
-<h2>Ответ на приглашение</h2>
-<p>Пожалуйста, сообщите нам до <b>10 июля 2026 года</b>, сможете ли вы разделить этот день вместе с нами.</p>
-<button>Ответить на приглашение</button>
-</section>
+    <section class="section dress reveal">
+      <p class="eyebrow">dress code</p>
+      <h2>Country mood</h2>
+      <p class="lead">
+        Нам будет приятно, если вы поддержите атмосферу этого дня
+        и выберете наряды в природной цветовой гамме.
+      </p>
 
-<section>
-<h2>Контакты</h2>
-<p>Мария — 8 (900) 494‑21‑41</p>
-<p>Михаил — 8 (961) 267‑14‑33</p>
-</section>
+      <div class="palette">
+        <span style="--c:#f4efe6"></span>
+        <span style="--c:#dfd2bd"></span>
+        <span style="--c:#b7b99d"></span>
+        <span style="--c:#8e9a75"></span>
+        <span style="--c:#9c7a5b"></span>
+        <span style="--c:#c2b8aa"></span>
+      </div>
 
-<script src="script.js"></script>
+      <p class="note">
+        Площадка находится на природе: газон, трава и загородная атмосфера.
+        Лучше выбрать удобную обувь на плоском ходу.
+      </p>
+    </section>
+
+    <section class="gender reveal">
+      <div class="gender__inner">
+        <p class="eyebrow">gender party</p>
+        <h2>В этот день нас ждёт ещё один особенный момент</h2>
+        <p>
+          Вместе с вами мы узнаем, кто совсем скоро станет новым членом нашей семьи.
+          Можно уже готовиться, за кого вы голосуете.
+        </p>
+      </div>
+    </section>
+
+    <section class="section rsvp reveal">
+      <p class="eyebrow">ответ на приглашение</p>
+      <h2>Пожалуйста, сообщите нам до 10 июля 2026 года</h2>
+      <p>
+        Сможете ли вы разделить этот день вместе с нами.
+        Ответить можно любым удобным способом — сообщением или звонком.
+      </p>
+      <button id="replyButton" class="button button--dark">Ответить на приглашение</button>
+      <p id="replyText" class="hidden">
+        Спасибо! Напишите нам, пожалуйста, сможете ли вы быть на свадьбе 🤍
+      </p>
+    </section>
+
+    <section class="section contacts reveal">
+      <p class="eyebrow">контакты</p>
+      <h2>Если возникнут вопросы</h2>
+      <div class="contact-grid">
+        <a href="tel:+79004942141">
+          <span>Мария</span>
+          8 (900) 494-21-41
+        </a>
+        <a href="tel:+79612671433">
+          <span>Михаил</span>
+          8 (961) 267-14-33
+        </a>
+      </div>
+    </section>
+
+    <footer>
+      <p>С любовью,</p>
+      <h2>Миша & Маша</h2>
+      <p>до встречи 14 августа</p>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
 </body>
 </html>
